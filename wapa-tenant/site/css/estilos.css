@@ -17,13 +17,13 @@ div.mainGrid{
 DIV.header{
 	grid-column: 1 / span 2;
 	grid-row: 1;
-	background-color:#fd5c3a;
+	background-color:#54c215;
 	font-family:Trebuchet MS, sans-serif;
-	font-weight:bold;
-	font-size:30px;
-	color: #EEE;
-	padding-left:20px;
-	padding-top:20px;
+        font-weight:bold;
+        font-size:30px;
+        color: #EEE;
+        padding-left:20px;
+        padding-top:20px;
 }
 
 div.menu_izquierda{
@@ -36,7 +36,7 @@ div.menu_izquierda{
 div.add{
 	grid-column: 1;
 	grid-row: 3;
-	background-color: #fd5c3a;
+	background-color: #54c215;
 	padding-top: 5px;
 	padding-left:2px;
 }
@@ -132,7 +132,7 @@ div.form-button button:hover{
 
 div.menuAdd{
 	display:table;
-	background-color:#fd5c3a;
+	background-color:#54c215;
 	position:absolute;
 	height:0px;
 	bottom:-180px;
@@ -160,7 +160,7 @@ div.menuAdd_menu{
 	display:table-cell;
 	width:300px;
 	padding-top:20px;
-	border-right: 1px solid #c63618;
+	border-right: 1px solid #348307;
 }
 
 div.menuAdd_item{
@@ -168,7 +168,7 @@ div.menuAdd_item{
 }
 
 div.menuAdd_item:hover{
-	background-color: #c63618;
+	background-color: #348307;
 }
 
 div.menuAadd_menu div{

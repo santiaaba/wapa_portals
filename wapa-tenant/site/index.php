@@ -38,7 +38,7 @@ include "../php/genericas.php";
 
 		<!-- Pagina principal -->
 		<div id="container" class="mainGrid">
-			<div class="header"> Admin </div>
+			<div class="header"> Tenant </div>
 
 			<div id="menu_izquierda" class="menu_izquierda"></div>
 

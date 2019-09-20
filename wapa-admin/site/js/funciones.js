@@ -485,7 +485,14 @@ function pantalla_nube(cloud_id){
 }
 
 function sitiosCloud(padre,cloud_id){
-	alert("Implementar. Cloudid=" + cloud_id)
+	$("#" + padre).empty()
+	$("#" + padre).append("<div id='lista_sitios'></div><div id='acciones_lista_sitios'></div>")
+	ajax_listado(	"sitios",
+			"lista_sitios",
+			"/api_admin_call.php?action=site_list&id=" + cloud_id,
+			null,
+			{"Nombre":"name","Rol":"rol","Estado":"status"},
+			[])
 }
 
 function infoCloud(padre,cloud_id){

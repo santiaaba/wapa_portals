@@ -1,0 +1,30 @@
+body{
+	background-color: #daf9c8;
+}
+div.login_form{
+	position:fixed;
+	top:0px;
+	height:100%;
+	right:0px;
+	width:360px;
+	background-color:#88cb62;
+	font-family: Trebuchet MS, sans-serif;
+	font-size: 18px;
+	padding-left:40px;
+	padding-top:20%;
+}
+
+.input{
+	margin-top:5px;
+	font-size:16px;
+	padding:5px;
+	color: #AAA;
+	width:250px;
+}
+
+button{
+	margin-top:5px;
+	font-size:16px;
+	padding:5px;
+	width:250px;
+}
