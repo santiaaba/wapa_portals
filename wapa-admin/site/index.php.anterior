@@ -1,0 +1,91 @@
+<?php
+
+include "../php/genericas.php";
+
+?>
+<HTML>
+	<HEAD>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/tasks.js"></script>
+		<script src="js/funciones.js"></script>
+		<script src="js/listado.js"></script>
+		<script src="js/sidenav.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/sidenav.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.min.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/listado.css">
+
+		<script>
+			$(function(){init()})
+		</script>
+
+	</HEAD>
+	<BODY>
+		<!-- Para el popup -->
+		<div id="dialog-form"></div>
+
+		<nav class="sidenav" data-sidenav data-sidenav-toggle="#sidenav-toggle">
+			<div class="sidenav-brand">
+				Menu
+			</div>
+			<ul class="sidenav-menu">
+				<li>
+					<a onclick="lista_nubes()">
+						<span class="sidenav-link-icon">
+							<!--<i class="material-icons">backup</i>-->
+							<img src="images/menu_nubes.png">
+						</span>
+						<span class="sidenav-link-title">Nubes</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="sidenav-menu">
+				<li>
+					<a onclick="lista_usuarios()">
+						<span class="sidenav-link-icon">
+							<!--<i class="material-icons">backup</i>-->
+							<img src="images/menu_usuarios.png">
+						</span>
+						<span class="sidenav-link-title">Usuarios</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div id="container" class="ui-widget container">
+			<div class="layout__row">
+				<div class="header">
+					<a class="toggle" id="sidenav-toggle">
+						<img src="images/menu.png" style="width:50px">
+					</a>
+				</div>
+			</div>
+			<div class="layout__row">
+				<div id="body" class="body">
+				</div>
+			</div>
+			<div class="layout__row">
+				<div id="tail" class="tail">
+					<div class="notif" id="notif">
+						<div class="notif_indicador noselect ui-corner-top" id="notif_indicador">
+							Mensajes
+						</div>
+						<div class="notif_contenido" id="notif_contenido">
+							<!--
+							<img src="nada" onclick="add_task('123123123','alta de cliente')">
+							<img src="nada" onclick="review_pending_tasks()">
+							-->
+							<img src="images/cancelar.png" onclick="remove_all()">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</BODY>
+</HTML>

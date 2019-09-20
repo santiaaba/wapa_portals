@@ -1,0 +1,11 @@
+div.menu_acciones_main{
+	background-color:red;
+	color: white;
+}
+
+div.menu_acciones_main div {
+	position:relative;
+	float:left;
+	padding:10px;
+	text-align:center;
+}

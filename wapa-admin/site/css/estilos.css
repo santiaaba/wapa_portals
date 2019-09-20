@@ -1,0 +1,296 @@
+html{
+	height:100%;
+}
+body{
+	margin:0px;
+	height:100%;
+	overflow:hidden;
+}
+
+div.mainGrid{
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-template-rows: 80px auto 50px;
+	height:100%;
+}
+
+DIV.header{
+	grid-column: 1 / span 2;
+	grid-row: 1;
+	background-color:#fd5c3a;
+}
+
+div.menu_izquierda{
+	grid-column: 1;
+	grid-row: 2;
+	background-color: #626262;
+	overflow: auto;
+}
+
+div.add{
+	grid-column: 1;
+	grid-row: 3;
+	background-color: #fd5c3a;
+	padding-top: 5px;
+	padding-left:2px;
+}
+
+div.body{
+	grid-column: 2;
+	grid-row: 2 / span 2;
+	padding:10px;
+	background-color: #AAA;
+	text-align: left;
+}
+
+img.menu{
+	width:60px;
+	height:auto;
+}
+
+div.item_menu{
+	height:70px;
+	width:100px;
+	text-align:left;
+}
+
+div.tasks{
+	background-color:#F7D358;
+	height: 300px;
+	display:none;
+}
+.task-pull-me{
+	display: block;
+	position: relative;
+	right: -125px;
+	width: 150px;
+	height: 20px;
+	font-family: arial, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	background: #0A2B4A;
+	text-decoration: none;
+	-moz-border-bottom-left-radius: 5px;
+	-moz-border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.task-pull-me p {
+	text-align: center;
+}
+
+DIV.datos{
+	height:200px;
+	padding-left:60px;
+	padding-top:20px;
+}
+
+/* Formularios */
+div.form-row{
+	//margin:20px;
+}
+
+div.form-label{
+	width:200px;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0px 15px 0px 10px;
+}
+div.form-input{
+	height:40px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+div.form-input input{
+	width:350px;
+	height:35px;
+	padding:3 0 3 8px;
+	font-size:16px;
+}
+
+div.form-button{
+}
+
+div.form-button button{
+	padding:10px;
+	border:1px;
+}
+
+div.form-button button:hover{
+	background-color:#ccc;
+	font-size:16px;
+}
+
+/* Menu_add */
+
+div.menuAdd{
+	display:table;
+	background-color:#fd5c3a;
+	position:absolute;
+	height:0px;
+	bottom:-180px;
+	width:100%;
+	color:white;
+	font-size:18px;
+}
+
+div.menuAdd_icon{
+	background-color:#fd5c3a;
+	position:absolute;
+	bottom:50px;
+	width:100%;
+	padding:10px;
+	/*left:0px;*/
+}
+
+div.menuAdd_icon span{
+	display:table-cell;
+	vertical-align:middle;
+	color:white;
+}
+
+div.menuAdd_menu{
+	display:table-cell;
+	width:300px;
+	padding-top:20px;
+	border-right: 1px solid #c63618;
+}
+
+div.menuAdd_item{
+	padding: 10 0 10 10px;
+}
+
+div.menuAdd_item:hover{
+	background-color: #c63618;
+}
+
+div.menuAadd_menu div{
+	padding:10px;
+	margin-bottom:10px;
+}
+
+div.menuAdd_menu div span{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+div.menuAdd_data{
+	display:table-cell;
+	padding:30px;
+	font-size:20px;
+}
+
+/* Notificaciones */
+
+div.notif{
+	position:fixed;
+	right:0px;
+	bottom:0px;
+	width:700px;
+	height:420px;
+	bottom:-384;
+}
+
+div.notif_indicador{
+	width:100px;
+	height:30px;
+	padding: 6px 0px 0px 6px;
+	font-size:14px;
+	background-color: #FFBF00;
+	font-weight:bold;
+}
+
+div.notif_contenido{
+	background-color:#585858;
+	height:350px;
+	overflow-y: auto;
+	padding-top:10px;
+	padding-left:10px;
+}
+
+div.task_tarea{
+	border-color: #dddddd;
+	border-style: solid;
+	border-width: 1px;
+	padding:10px;
+	width: 95%;
+	color: #dddddd;
+	height:30px;
+	display:table;
+	margin-top:10px;
+}
+
+div.task_mensaje{
+	width:92%;
+	display: table-cell;
+	vertical-align:middle;
+}
+div.task_resultado{
+	margin-top:10px;
+	font-style:italic;
+	font-size:14px;
+	padding-left:10px;
+}
+
+div.task_status{
+	display: table-cell;
+	vertical-align:middle;
+	text-align:right;
+}
+
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+div.menu_h_contenedor{
+	padding:10px;
+}
+
+div.data{
+	padding:10px;
+}
+
+div.menu_h{
+	color: #dddddd;
+}
+
+div.menu_h span {
+	padding: 4px 15px 4px 15px;
+	font-size: 16px;
+}
+
+div.menu_h span:hover {
+	background-color: #F7D358;
+	color: #585858;
+}
+
+/* Solapa */
+
+div.solapas_main{
+	border-bottom: solid 1px #fd5c3a;
+	display:flex;
+	padding:5px;
+}
+
+div.solapas_main div{
+	position:relative;
+	float:left;
+	color:white;
+	min-width:80px;
+	text-align: center;
+	background: #fd5c3a;
+	margin: 0px 6px 0px 6px;
+	padding: 10px;
+}
+
+div.solapas_main div:hover {
+	background-color: #c63618;
+}
