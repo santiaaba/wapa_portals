@@ -1,3 +1,32 @@
+function determinaNubes(){
+	/* Determina el tipo de nubes que posee el usuario.
+ 	   Este dato es relevante por ejemplo para crear los menus */
+
+	var nubes = [];
+
+	$.ajax({
+                type: "GET",
+                url: webpage + "/users/" + UserId "/susc",
+                success : function(data){
+			/* De cada suscripcion determinarmos sus nubes */
+			var obj = JSON.parse(data)
+			$.each(obj.data,function(index,value){
+				$.ajax({
+					type: "GET",
+					url: webpage + "/plans/" + planId,
+					success : function(data){
+						var obj2 = JSON.parse(data)
+						$.each(obj2.data,function(index,value){
+							nubes.add(value.tipo)
+						})
+					}
+				})
+			})
+		}
+	})
+	return nubes
+}
+
 function make_menu_iz(items){
 	
 	/* items es una lista de tuplas con los siguietnes datos
@@ -73,7 +102,7 @@ function inicializar(){
 	/* Inicializamos el menu de agregado. Algunos de los items
            dependeran de las nubes a las que este suscripto el usuario */
 	//var datos = [["Usuario","menu_usuarios.png","form_add_user"],["Planes","menu_planes.png","form_add_plan"]]
-	//var datos = []
+	var datos = []
 	menuAdd_init(datos)
 
 	/* Inicializacion del menu */
